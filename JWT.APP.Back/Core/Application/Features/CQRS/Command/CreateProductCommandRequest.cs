@@ -1,0 +1,19 @@
+﻿using JWT.APP.Back.Core.Domain;
+using JWT.APP.Back.Core.Interfaces;
+using MediatR;
+
+namespace JWT.APP.Back.Core.Application.Features.CQRS.Command
+{
+    public class CreateProductCommandRequest : IRequest
+    {
+        public string? Name { get; set; }
+
+        public int Stock { get; set; }
+
+        public decimal Price { get; set; }
+
+        public int CategoryId { get; set; }
+
+
+    }
+}
